@@ -1,18 +1,23 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
+
 int main(){
-    int n, last(0), current, maxi(1), counter(1), flag(0);
-    cin >> n;
-    for(int i=0; i<n; i++){
-        cin >> current;
-        if(i>0){
-            if(current==last+1) counter++;
-            else {counter=0; flag=1;}
-            if(counter>maxi) maxi = counter;
-        }last=current;
+
+    long long n,i,k,ans=0,cnt=0;
+    cin>>n;
+    long long a[n];
+    a[0]=0, a[n+1]=1001;
+
+    for(i=1;i<=n;i++) cin>>a[i];
+
+    for(i=1;i<=n;i++){
+        if(a[i]==a[i-1]+1 && a[i]==a[i+1]-1 ){
+            cnt++;
+            ans=max(ans,cnt);
+        }
+        else cnt=0;
     }
-    if(flag==0) cout << maxi-1; //If all are consecutive
-    else if(maxi%2==0) cout << maxi-2; //Odd consecutive
-    else cout << maxi-1; //Even consecutive
+
+    cout<<ans<<endl;
     return 0;
 }
