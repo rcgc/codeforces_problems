@@ -18,8 +18,8 @@ int main(){
 
     key = key %26;
 
-    memset(newCad, 0, strlen(newCad));
-    memset(cad, 0, strlen(cad));
+    memset(newCad, 0, strlen(newCad)); // Clean string buffer
+    memset(cad, 0, strlen(cad)); // Clean string buffer
 
     for(i=0; i<n; i++){
         gets(cad);
