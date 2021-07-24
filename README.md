@@ -1,2 +1,2 @@
-# codeforces_problems
+# Codeforces problems
 Codeforces problems solved so far.
