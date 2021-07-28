@@ -2,14 +2,9 @@
 #include<string.h>
 
 int main(){
-    int n;
-    int key;
-    int aux=0;
+    int n, key, aux=0;
     char newAsciiCharacter;
-    char cad[1000];
-    char newCad[1000];
-
-    char br='\n';
+    char cad[1000], newCad[1000], br='\n';
 
     int i=0, j=0;
 
