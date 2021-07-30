@@ -25,12 +25,12 @@ int main(){
         itr->second = 1;
     }
 
-    for(auto itr = gauntlet.begin(); itr !=gauntlet.end(); ++itr){
+    for(auto itr = gauntlet.begin(); itr != gauntlet.end(); ++itr){
         if(itr->second == 0) counter++;
     }
     cout << counter << endl;
 
-    for(auto itr = gauntlet.begin(); itr !=gauntlet.end(); ++itr){
+    for(auto itr = gauntlet.begin(); itr != gauntlet.end(); ++itr){
         if(itr->second == 0){
             if(itr->first == "purple")  cout << "Power" << endl;
             if(itr->first == "green")   cout << "Time" << endl;
