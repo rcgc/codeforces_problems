@@ -20,4 +20,5 @@ fn main() {
       }
       str.clear();
     }
+    input.clear();
 }
